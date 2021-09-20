@@ -1,0 +1,178 @@
+@use './vars' as *;
+
+body{
+    overflow-x: hidden;
+    background-color: $BGcolor;
+}
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: $Colorletter;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid $BGcolor;  /* creates padding around scroll thumb */
+}
+.size-25{
+    font-size: 25px;
+}
+
+.Content-Bg{
+    padding-top: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.Box-Img-Home{
+    width: 100%;
+    max-width: 700px;
+}
+.Img-Home{
+    width: 100%;
+}
+.Box-Title-Home{
+    width: 100%;
+    max-width: 500px;
+}
+.Title{
+    color: $Colorletter;
+    font-family: $fuente;
+    font-size: 50px;
+}
+/*-----------------CHARACTERS---------------------*/
+
+.Box-Search,.Box-Targets,.Box-Pagination{
+    width: 100%;
+    margin: 20px;
+}
+.Input-Search{
+    width: 100%;
+    max-width: 200px;
+    outline: none;
+    border: 1px solid #ccc;
+    color: $Colorletter;
+    background-color: $BGcolor;
+    font-family: $fuente;
+}
+.Btn-Search{
+    color: $Colorletter;
+    font-family: $fuente;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    background-color: $ColorExtra;
+}
+.Btn-Search:hover{
+    background-color: rgb(207, 207, 207);
+}
+.subtitle{
+    color: $Colorletter;
+    font-family: $fuente;
+    margin: 5px;
+    text-decoration: none;
+}
+.pagina{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid $Colorletter ;
+    color: $Colorletter ;
+    font-family: $fuente;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+}
+.actual{
+    background-color: $Colorletter;
+    color:$BGcolor;
+}
+
+.Target{
+    width: 200px;
+    height: 350px;
+    border: 1px solid $Colorletter ;
+    border-radius: 10px;
+}
+.Img-Target{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+.Btn-Target{
+    color: $BGcolor;
+    font-family: $fuente;
+    border: 1px solid $Colorletter;
+    outline: none;
+    cursor: pointer;
+    background-color: $Colorletter;
+    margin: 5px;
+}
+
+/*--------------INFO-CHARACTER----------------*/
+
+.Box-BigImg{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+.Img-InfoCharacter,.Box-Informacion,.Box-Informacion-episode,.Img-Resident {
+    width: 100%;
+    height: 100%;
+}
+.Box-Informacion-episode{
+    max-height: 300px;
+    overflow-y: auto;
+}
+.Box-Info{
+    width: 100%;
+    max-width: 200px;
+}
+.Box-InfoCharacter{
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    padding: 20px;
+}
+.Target-Episodio{
+    width: 200px;
+    min-height: 40px;
+    border: 1px solid $Colorletter ;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/*---------------INFO-LOCATION-----------------*/
+.Aside-Info{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    border-right: 2px solid whitesmoke;
+    margin: 10px;
+}
+
+.Content-Figures-Residents{
+    width: 100%;
+    max-width: 700px;
+}
+.Figure-Residents{
+    width: 100px;
+    height: 100px;
+    border: 1px solid $Colorletter ;
+    border-radius: 10px;
+    margin: 5px;
+    z-index: -5;
+    cursor: pointer;
+}
+.Img-Resident{
+    z-index: -6;
+    border-radius: 10px;
+}
+.Figure-Residents:hover{
+    background-color: rgba(168, 168, 168, 0.719);
+}

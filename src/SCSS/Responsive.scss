@@ -1,0 +1,35 @@
+@use './vars' as *;
+
+.Barr-Responsive{
+    display: none;
+    color: $Colorletter;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 18px;
+}
+
+@media screen and (max-width: 700px){
+    .Header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Barr-Responsive{
+        display: block;
+    }
+    .Header-Box-Link-Pages{
+        display: none;
+    }
+}
+.responsive-true{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    height: 100vh;
+    z-index: 1000;
+    padding-top: 80px;
+}

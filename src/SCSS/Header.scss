@@ -1,0 +1,46 @@
+@use './vars' as *;
+
+.Header{
+    width: 100vw;
+    min-height: 80px;
+    background-color: $BGcolor ;
+    border-bottom: 4px solid $ColorExtra;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 20;
+}
+.Header-Img{
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+}
+.link{
+    font-family: $fuente;
+}
+.nav-link{
+    margin: 10px;
+    text-decoration: none;
+    color: $Colorletter;
+    font-family: $fuente;
+}
+.Btn-DarkMode{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid $ColorExtra;
+    background-color: $BGcolor ;
+    color: $Colorletter;
+    margin: 10px;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 1px solid $Colorletter;
+}
+.nav-link:hover,.Btn-DarkMode:hover{
+    color: $ColorletterHover;
+}
+.moon{
+    $BGcolor: rgb(22, 22, 22);
+    $Colorletter: rgb(255, 255, 255);
+    $ColorletterHover: rgb(211, 211, 211);  
+}
